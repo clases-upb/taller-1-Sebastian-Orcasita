@@ -224,9 +224,11 @@ public class Taller1 {
         try {
         
             double equivale_peso_luna = 0;
-            final double conver_kg_new = 9.81; 
-            final double conver_peso_luna = 0.165;
-            equivale_peso_luna = (peso_kilos * conver_kg_new) * conver_peso_luna;
+            double peso_tierra_new = 0;
+            final float conver_kg_new = 9.81f; 
+            final float conver_peso_luna = 0.165f;
+            peso_tierra_new = peso_kilos * conver_kg_new;
+            equivale_peso_luna = peso_tierra_new * conver_peso_luna;
             return equivale_peso_luna; 
 
         } 
